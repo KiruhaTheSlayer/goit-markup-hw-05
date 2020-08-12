@@ -29,13 +29,15 @@
           </div>
           <ul class="site-nav">
             <li class="site-nav-items">
-              <a class="links" href="./index.html">Студия</a>
+              <a class="links studio" href="./index.html">Студия</a>
             </li>
             <li class="site-nav-items">
-              <a class="links" href="./portfolio.html">Портфолио</a>
+              <a class="links portfolio-studio" href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
             <li class="site-nav-items">
-              <a class="links" href="#">Контакты</a>
+              <a class="links contacts" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -68,9 +70,17 @@
             </h1>
           </div>
           <div class="container-btn">
-            <a href="#" class="btn-banner"
-              ><span class="btn--style">Заказать услугу</span></a
-            >
+            <button class="btn-style" data-modal-open>Заказать услугу</button>
+          </div>
+          <!-- modal window -->
+          <div class="backdrop is-hidden" data-backdrop>
+            <div class="modal">
+              <button class="modal-btn-style" data-modal-close>
+                <svg class="button-close-icon">
+                  <use xlink:href="./assets/image/sprite2.svg#icon-Vector" />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -149,10 +159,11 @@
               <figure class="figure-card">
                 <img
                   src="./assets/image/img(1).jpg"
-                  alt="Николай Кучеренко"
-                  class="img-nikolai"
+                  alt="Игорь Демьяненко"
+                  width="270"
+                  height="260"
                 />
-                <h2 class="our-team-names">Николай Кучеренко</h2>
+                <h2 class="our-team-names">Игорь Демьяненко</h2>
                 <p class="team-members-position">Product Designer</p>
                 <ul class="social-media-list">
                   <li class="social-media-item">
@@ -215,10 +226,11 @@
               <figure class="figure-card">
                 <img
                   src="./assets/image/img(2).jpg"
-                  alt="Ольга Иванова"
-                  class="img-olga"
+                  alt="Ольга Репина"
+                  width="270"
+                  height="260"
                 />
-                <h2 class="our-team-names">Ольга Иванова</h2>
+                <h2 class="our-team-names">Ольга Репина</h2>
                 <p class="team-members-position">Frontend Developer</p>
                 <ul class="social-media-list">
                   <li class="social-media-item">
@@ -281,10 +293,11 @@
               <figure class="figure-card">
                 <img
                   src="./assets/image/img(3).jpg"
-                  alt="Андрей Шевченко"
-                  class="img-andrei"
+                  alt="Николай Тарасов"
+                  width="270"
+                  height="260"
                 />
-                <h2 class="our-team-names">Андрей Шевченко</h2>
+                <h2 class="our-team-names">Николай Тарасов</h2>
                 <p class="team-members-position">Marketing</p>
                 <ul class="social-media-list">
                   <li class="social-media-item">
@@ -347,10 +360,11 @@
               <figure class="figure-card">
                 <img
                   src="./assets/image/img(4).jpg"
-                  alt="Иван Николаев"
-                  class="img-ivan"
+                  alt="Михаил Ермаков"
+                  width="270"
+                  height="260"
                 />
-                <h2 class="our-team-names">Иван Николаев</h2>
+                <h2 class="our-team-names">Михаил Ермаков</h2>
                 <p class="team-members-position">UI Designer</p>
                 <ul class="social-media-list">
                   <li class="social-media-item">
@@ -575,5 +589,6 @@
         </div>
       </div>
     </footer>
+    <script src="./assets/js/modal.js"></script>
   </body>
 </html>
