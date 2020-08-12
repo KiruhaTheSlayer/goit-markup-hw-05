@@ -479,12 +479,12 @@ figure {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal .modal-btn-style {
-  outline: none;
-}
-
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(0.5);
+}
+
+.modal .modal-btn-style {
+  outline: none;
 }
 
 .modal-btn-style {
